@@ -6,3 +6,9 @@ p{
   text-align: center;
   font-family: Times New Roman, regular;
 }
+.done{
+  text-decoration: line-through;
+}
+ul{
+  list-style-type: none;
+}
