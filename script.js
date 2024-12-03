@@ -1,5 +1,5 @@
-const button = document.getElementsByClassName('btn-perform')[0]
-
-button.addEventListener('click', function () {
-  alert('Исполнено')
+const button = document.getElementsByClassName('btn-perform');
+function handleClick() {
+    alert("Исполнено");
 }
+button.addEventListener('click', handleClick);
