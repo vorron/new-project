@@ -11,4 +11,15 @@ for (let i = 0; i < buttonsCollection.length; i++){
             }
         }
 }
-
+//Кнопка del
+const buttonsCollectionDel= document.getElementsByClassName('btn-del');
+for (let i = 0; i < buttonsCollectionDel.length; i++){
+    let button = buttonsCollectionDel[i];
+    button.addEventListener('click', delTask)
+        function delTask(){
+            const delTaskIn = this.closest('li')
+            if (delTask){
+                delTaskIn.remove()
+            }
+        }
+}
