@@ -23,3 +23,12 @@ for (let i = 0; i < buttonsCollectionDel.length; i++){
             }
         }
 }
+//Кнопка добавления задачи
+const form= document.getElementById('add-task-form');
+const button= document.getElementById('btn-add');
+button.addEventListener('click', function(event){
+    event.preventDefault(){
+        if alert('временно присвоил айди кнопке')
+    }
+})
+
