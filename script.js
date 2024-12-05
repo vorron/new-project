@@ -3,8 +3,8 @@ const buttonsCollection= document.getElementsByClassName('btn-perform');
 for (let i = 0; i < buttonsCollection.length; i++){
     let button = buttonsCollection[i];
     button.addEventListener('click', toggleClass)
-        function toggleClass(){
-            const parentEl = this.closest('li');
+        function toggleClass(event){
+            const parentEl = event.target.closest('li');
             const targetSpan = parentEl.querySelector('span');
             if (targetSpan){
                 targetSpan.classList.toggle('done');
@@ -16,8 +16,8 @@ const buttonsCollectionDel= document.getElementsByClassName('btn-del');
 for (let i = 0; i < buttonsCollectionDel.length; i++){
     let button = buttonsCollectionDel[i];
     button.addEventListener('click', delTask)
-        function delTask(){
-            const delTaskIn = this.closest('li')
+        function delTask(event){
+            const delTaskIn = event.target.closest('li')
             if (delTask){
                 delTaskIn.remove()
             }
@@ -30,3 +30,4 @@ button.addEventListener('click', function(event){
     event.preventDefault()
     alert('временно присвоил айди кнопке')
 })
+
