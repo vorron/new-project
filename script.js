@@ -27,8 +27,7 @@ for (let i = 0; i < buttonsCollectionDel.length; i++){
 const form= document.getElementById('add-task-form');
 const button= document.getElementById('btn-add');
 button.addEventListener('click', function(event){
-    event.preventDefault(){
-        if alert('временно присвоил айди кнопке')
-    }
+    event.preventDefault()
+    alert('временно присвоил айди кнопке')
 })
 
