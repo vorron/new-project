@@ -30,4 +30,7 @@ button.addEventListener('click', function(event){
     event.preventDefault()
     alert('временно присвоил айди кнопке')
 })
+    event.preventDefault()
+    alert('временно присвоил айди кнопке')
+})
 
