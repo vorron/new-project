@@ -1,16 +1,25 @@
+// Копка Вып
 const buttonsCollection= document.getElementsByClassName('btn-perform');
 for (let i = 0; i < buttonsCollection.length; i++){
     let button = buttonsCollection[i];
-    button.addEventListener('click', function(){
-        const parentEl = this.closest('li');
-        const targetSpan = parentEl.querySelector('span');
-        if (targetSpan){
-            targetSpan.classList.toggle('done');
+    button.addEventListener('click', toggleClass)
+        function toggleClass(){
+            const parentEl = this.closest('li');
+            const targetSpan = parentEl.querySelector('span');
+            if (targetSpan){
+                targetSpan.classList.toggle('done');
+            }
         }
-
-    })
-
-
-    
-
+}
+//Кнопка del
+const buttonsCollectionDel= document.getElementsByClassName('btn-del');
+for (let i = 0; i < buttonsCollectionDel.length; i++){
+    let button = buttonsCollectionDel[i];
+    button.addEventListener('click', delTask)
+        function delTask(){
+            const delTaskIn = this.closest('li', '/li')
+            if (delTask){
+                delTask.remove()
+            }
+        }
 }
