@@ -1,5 +1,6 @@
 body{
-  background-image: url(bg.jpg) no-repeat center center / cover;
+  background-image: url(bg.jpg);
+  background-size: 100vw 100vh;
   text-align: center;
   font-family: Times New Roman, regular;
 }
